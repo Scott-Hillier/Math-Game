@@ -1,11 +1,9 @@
-class Questions
-
+class Question
   attr_accessor :question, :answer
-
-  def question
-    number1 = rand(1..20)
-    number2 = rand(1..20)
-    @question = "What does #{number1} + #{number2} equal?"
-    @answer = number1 + number2
+  def questions
+    num1 = rand(1..20)
+    num2 = rand(1..20)
+    @question = "What is #{num1} + #{num2}?"
+    @answer = num1 + num2
   end
 end
